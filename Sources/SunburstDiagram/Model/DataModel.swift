@@ -83,17 +83,19 @@ public struct Node: Identifiable, Equatable {
     
     public var showName: Bool = true
     public var image: Image? = nil
+    public var imageColor: Color? = nil
     public var backgroundColor: Color? = nil
 
     // Internal values
     var computedValue: Double = 0.0
     var computedBackgroundColor: Color = .systemGray
 
-    public init(name: String, showName: Bool = true, image: Image? = nil,
+    public init(name: String, showName: Bool = true, image: Image? = nil, imageColor: Color? = nil,
                 value: Double? = nil, backgroundColor: Color? = nil, children: [Node] = []) {
         self.name = name
         self.showName = showName
         self.image = image
+        self.imageColor = imageColor
         self.value = value
         self.backgroundColor = backgroundColor
         self.children = children

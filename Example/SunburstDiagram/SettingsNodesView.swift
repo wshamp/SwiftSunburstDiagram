@@ -34,7 +34,7 @@ struct SettingsNodesView: View {
         return NavigationLink(destination: SettingsNodesView(nodes: node.children)) {
             HStack {
                 IfLet(node.image) { image in
-                    image.renderingMode(.template)
+                    image.renderingMode(.template).foregroundColor(node.imageColor)
                 }
                 Text(node.name)
                 Spacer()
