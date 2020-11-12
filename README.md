@@ -67,8 +67,8 @@ If you prefer not to use the Swift Package Manager, you can integrate SunburstDi
 let configuration = SunburstConfiguration(nodes: [
     Node(name: "Walking", value: 10.0, backgroundColor: .systemBlue),
     Node(name: "Restaurant", value: 30.0, backgroundColor: .systemRed, children: [
-        Node(name: "Dessert", image: UIImage(named: "croissant"), value: 6.0),
-        Node(name: "Dinner", image: UIImage(named: "poultry"), value: 10.0),
+        Node(name: "Dessert", image: Image("croissant"), value: 6.0),
+        Node(name: "Dinner", image: Image("poultry"), value: 10.0),
     ]),
     Node(name: "Transport", value: 10.0, backgroundColor: .systemPurple),
     Node(name: "Home", value: 50.0, backgroundColor: .systemTeal),

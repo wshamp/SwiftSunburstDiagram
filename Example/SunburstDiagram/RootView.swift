@@ -45,17 +45,17 @@ struct RootView_Previews: PreviewProvider {
         let configuration = SunburstConfiguration(nodes: [
             Node(name: "Walking",
                  showName: false,
-                 image: UIImage(named: "walking"),
+                 image: Image("walking"),
                  value: 10.0,
                  backgroundColor: .systemBlue),
             Node(name: "Restaurant",
                  showName: false,
-                 image: UIImage(named: "eating"),
+                 image: Image("eating"),
                  value: 30.0,
                  backgroundColor: .systemRed),
             Node(name: "Home",
                  showName: false,
-                 image: UIImage(named: "house"),
+                 image: Image("house"),
                  value: 75.0,
                  backgroundColor: .systemTeal)
         ])

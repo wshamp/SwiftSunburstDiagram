@@ -34,7 +34,7 @@ struct SettingsNodesView: View {
         return NavigationLink(destination: SettingsNodesView(nodes: node.children)) {
             HStack {
                 IfLet(node.image) { image in
-                    Image(uiImage: image).renderingMode(.template)
+                    image.renderingMode(.template)
                 }
                 Text(node.name)
                 Spacer()
@@ -50,7 +50,7 @@ struct SettingsNodesView_Previews: PreviewProvider {
         SettingsNodesView(nodes: [
             Node(name: "Walking",
                  showName: false,
-                 image: UIImage(named: "walking"),
+                 image: Image("walking"),
                  value: 10.0,
                  backgroundColor: .systemBlue)
         ])

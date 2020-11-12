@@ -82,15 +82,15 @@ public struct Node: Identifiable, Equatable {
     public var value: Double? = nil
     
     public var showName: Bool = true
-    public var image: UIImage? = nil
-    public var backgroundColor: UIColor? = nil
+    public var image: Image? = nil
+    public var backgroundColor: Color? = nil
 
     // Internal values
     var computedValue: Double = 0.0
-    var computedBackgroundColor: UIColor = .systemGray
+    var computedBackgroundColor: Color = .systemGray
 
-    public init(name: String, showName: Bool = true, image: UIImage? = nil,
-                value: Double? = nil, backgroundColor: UIColor? = nil, children: [Node] = []) {
+    public init(name: String, showName: Bool = true, image: Image? = nil,
+                value: Double? = nil, backgroundColor: Color? = nil, children: [Node] = []) {
         self.name = name
         self.showName = showName
         self.image = image

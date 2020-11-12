@@ -32,26 +32,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UISplitViewControllerDe
 
     private func sampleNodes() -> [Node] {
         let nodes = [
-            Node(name: "Walking", showName: false, image: UIImage(named: "walking"), value: 10.0, backgroundColor: .systemBlue),
-            Node(name: "Restaurant", showName: false, image: UIImage(named: "eating"), value: 30.0, backgroundColor: .systemRed, children: [
-                Node(name: "Dessert", showName: false, image: UIImage(named: "croissant"), value: 10.0, backgroundColor: .systemYellow, children: [
+            Node(name: "Walking", showName: false, image: Image("walking"), value: 10.0, backgroundColor: .systemBlue),
+            Node(name: "Restaurant", showName: false, image: Image("eating"), value: 30.0, backgroundColor: .systemRed, children: [
+                Node(name: "Dessert", showName: false, image: Image("croissant"), value: 10.0, backgroundColor: .systemYellow, children: [
                     Node(name: "Creme Brulee", showName: false, value: 3.0, backgroundColor: .systemYellow),
                     Node(name: "Crepes", showName: false, value: 6.0, backgroundColor: .systemYellow, children: [
                         Node(name: "Nutella Crepe", showName: false, value: 4.0, backgroundColor: .systemYellow),
                     ]),
                 ]),
-                Node(name: "Dinner", showName: false, image: UIImage(named: "poultry"), value: 5.0, backgroundColor: .systemOrange, children: [
+                Node(name: "Dinner", showName: false, image: Image("poultry"), value: 5.0, backgroundColor: .systemOrange, children: [
                     Node(name: "Pizza", showName: false, value: 4.0, backgroundColor: .systemOrange),
                 ]),
             ]),
-            Node(name: "Transport", showName: false, image: UIImage(named: "sailing"), value: 10.0, backgroundColor: .systemPurple),
-            Node(name: "Home", showName: false, image: UIImage(named: "house"), value: 45.0, backgroundColor: .systemTeal, children: [
-                Node(name: "San Francisco", showName: false, image: UIImage(named: "house"), value: 15.0, backgroundColor: .systemTeal, children: [
+            Node(name: "Transport", showName: false, image: Image("sailing"), value: 10.0, backgroundColor: .systemPurple),
+            Node(name: "Home", showName: false, image: Image("house"), value: 45.0, backgroundColor: .systemTeal, children: [
+                Node(name: "San Francisco", showName: false, image: Image("house"), value: 15.0, backgroundColor: .systemTeal, children: [
                     Node(name: "Twin Peaks", showName: false, value: 3.0, backgroundColor: .systemTeal),
                     Node(name: "Hayes Valley", showName: false, value: 1.5, backgroundColor: .systemTeal),
                     Node(name: "Nob Hill", showName: false, value: 8.0, backgroundColor: .systemTeal),
                 ]),
-                Node(name: "Lyon", showName: false, image: UIImage(named: "house"), value: 6.0, backgroundColor: .systemTeal),
+                Node(name: "Lyon", showName: false, image: Image("house"), value: 6.0, backgroundColor: .systemTeal),
             ]),
         ]
 
