@@ -24,7 +24,6 @@ public struct SunburstView: View {
             Spacer()
         }
         .flipsForRightToLeftLayoutDirection(true)
-        .padding()
 
         let drawnArcs = arcs.drawingGroup()
         return drawnArcs
